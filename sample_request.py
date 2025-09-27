@@ -20,7 +20,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # local_url = "http://127.0.0.1:7000/predictions/"
-cloud_url = "https://census-mldevops.onrender.com/predictions/"
+cloud_url = "https://deploying-a-ml-model.onrender.com"
 
 sample = {
     "age": 35,
