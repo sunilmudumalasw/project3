@@ -8,3 +8,154 @@ __main__ - INFO - Processing training data
 __main__ - INFO - Reading data: /mnt/e/nd0821/project3/data/census.csv
 __main__ - INFO - Data Split
 __main__ - INFO - Processing training data
+__main__ - INFO - Reading data: /mnt/e/nd0821/project3/data/census.csv
+__main__ - INFO - Data Split
+__main__ - INFO - Processing training data
+__main__ - INFO - Reading data: /mnt/e/nd0821/project3/data/census.csv
+__main__ - INFO - Data Split
+__main__ - INFO - Processing training data
+__main__ - INFO - Reading data: /mnt/e/nd0821/project3/data/census_clean.csv
+__main__ - INFO - Data Split
+__main__ - INFO - Processing training data
+__main__ - INFO - Processing test data
+__main__ - INFO - Training model
+__main__ - INFO - Training model complete! Saving it to /mnt/e/nd0821/project3/model
+__main__ - INFO - Model evaluation
+root - INFO - 
+	precision-> 0.7302393038433648
+	recall->0.642219387755102
+	fbeta->0.6834068544282321
+__main__ - INFO - Model metrics by slice
+root - INFO - ***
+Performance on workclass slice -> 
+                     feature n_samples precision    recall     fbeta
+ Private           workclass      4582  0.716667  0.636095  0.673981
+ Self-emp-inc      workclass       215  0.790698  0.829268  0.809524
+ Self-emp-not-inc  workclass       513  0.805825  0.535484  0.643411
+ Local-gov         workclass       410  0.637931  0.678899  0.657778
+ Federal-gov       workclass       188  0.859649  0.671233  0.753846
+ State-gov         workclass       245  0.811321  0.704918  0.754386
+ ?                 workclass       357   0.52381  0.333333  0.407407
+ Without-pay       workclass         2       1.0       1.0       1.0
+ Never-worked      workclass         1       1.0       1.0       1.0
+***
+root - INFO - ***
+Performance on education slice -> 
+                 feature n_samples precision    recall     fbeta
+ HS-grad       education      2112  0.573394  0.404531  0.474383
+ Assoc-voc     education       277       0.6  0.471429     0.528
+ Some-college  education      1460  0.716738  0.569966  0.634981
+ Bachelors     education      1096  0.773333  0.756522  0.764835
+ Prof-school   education       117  0.886598  0.914894  0.900524
+ Doctorate     education        89  0.857143  0.923077  0.888889
+ 11th          education       207       0.0       0.0       1.0
+ 12th          education        68       1.0  0.166667  0.285714
+ 10th          education       193       0.8  0.363636       0.5
+ 1st-4th       education        32       0.0       0.0       1.0
+ Masters       education       355   0.78392  0.825397  0.804124
+ Assoc-acdm    education       212  0.547619  0.534884  0.541176
+ 7th-8th       education       130       0.4      0.25  0.307692
+ 9th           education        91       1.0       0.0       0.0
+ 5th-6th       education        67       1.0      0.25       0.4
+ Preschool     education         7       1.0       1.0       1.0
+***
+root - INFO - ***
+Performance on marital_status slice -> 
+                               feature n_samples precision    recall     fbeta
+ Married-civ-spouse     marital_status      3002  0.724111  0.684093  0.703533
+ Never-married          marital_status      2119     0.825  0.388235     0.528
+ Widowed                marital_status       184       1.0  0.277778  0.434783
+ Divorced               marital_status       904  0.775862  0.416667  0.542169
+ Separated              marital_status       220       0.5  0.285714  0.363636
+ Married-spouse-absent  marital_status        81  0.833333       0.5     0.625
+ Married-AF-spouse      marital_status         3       1.0       1.0       1.0
+***
+root - INFO - ***
+Performance on occupation slice -> 
+                       feature n_samples precision    recall     fbeta
+ Exec-managerial    occupation       832  0.775309  0.786967  0.781095
+ Transport-moving   occupation       302   0.65625  0.446809  0.531646
+ Adm-clerical       occupation       759  0.577778  0.525253  0.550265
+ Prof-specialty     occupation       836  0.794805  0.792746  0.793774
+ Sales              occupation       742  0.702857  0.630769  0.664865
+ Craft-repair       occupation       808  0.586466  0.402062  0.477064
+ Tech-support       occupation       193  0.857143  0.646154  0.736842
+ Other-service      occupation       678     0.625   0.15625      0.25
+ Handlers-cleaners  occupation       282  0.666667  0.285714       0.4
+ Priv-house-serv    occupation        28       1.0       1.0       1.0
+ Farming-fishing    occupation       190  0.923077       0.4   0.55814
+ ?                  occupation       358   0.52381  0.333333  0.407407
+ Machine-op-inspct  occupation       385  0.482759  0.368421   0.41791
+ Protective-serv    occupation       119  0.757576  0.694444  0.724638
+ Armed-Forces       occupation         1       1.0       1.0       1.0
+***
+root - INFO - ***
+Performance on relationship slice -> 
+                      feature n_samples precision    recall     fbeta
+ Wife            relationship       316  0.684564  0.689189  0.686869
+ Husband         relationship      2642  0.729148  0.686655  0.707264
+ Not-in-family   relationship      1720  0.769231  0.426829   0.54902
+ Own-child       relationship       977       1.0  0.285714  0.444444
+ Unmarried       relationship       662       0.9  0.321429  0.473684
+ Other-relative  relationship       196       1.0  0.222222  0.363636
+***
+root - INFO - ***
+Performance on race slice -> 
+                    feature n_samples precision    recall     fbeta
+ White                 race      5530  0.733017  0.651228  0.689706
+ Asian-Pac-Islander    race       208      0.72  0.631579  0.672897
+ Black                 race       645  0.690909  0.520548   0.59375
+ Other                 race        51       0.5  0.666667  0.571429
+ Amer-Indian-Eskimo    race        79      0.75       0.3  0.428571
+***
+root - INFO - ***
+Performance on sex slice -> 
+        feature n_samples precision    recall     fbeta
+ Female     sex      2147  0.718919  0.580786  0.642512
+ Male       sex      4366  0.731993  0.652726  0.690091
+***
+root - INFO - ***
+Performance on native_country slice -> 
+                                    feature n_samples precision    recall     fbeta
+ United-States               native_country      5830  0.730586  0.646111  0.685757
+ Taiwan                      native_country         6  0.666667       1.0       0.8
+ Mexico                      native_country       128  0.333333  0.142857       0.2
+ Philippines                 native_country        42  0.909091  0.714286       0.8
+ ?                           native_country       121  0.666667       0.5  0.571429
+ Germany                     native_country        17       1.0       0.5  0.666667
+ Japan                       native_country        11  0.714286       1.0  0.833333
+ Puerto-Rico                 native_country        21       0.5  0.666667  0.571429
+ China                       native_country        17       1.0     0.875  0.933333
+ Cuba                        native_country        22       0.5       0.5       0.5
+ Scotland                    native_country         4       1.0       1.0       1.0
+ Iran                        native_country         9       1.0       1.0       1.0
+ Haiti                       native_country        10       1.0       1.0       1.0
+ Vietnam                     native_country        14       1.0       0.0       0.0
+ Dominican-Republic          native_country        18       1.0       1.0       1.0
+ Columbia                    native_country        15       1.0       1.0       1.0
+ Ecuador                     native_country         6       1.0       0.0       0.0
+ India                       native_country        21       0.5       0.5       0.5
+ France                      native_country         9      0.75       1.0  0.857143
+ South                       native_country        17       0.5       0.5       0.5
+ Yugoslavia                  native_country         5       1.0       0.5  0.666667
+ Poland                      native_country        12       1.0  0.333333       0.5
+ Canada                      native_country        25     0.625  0.833333  0.714286
+ El-Salvador                 native_country        15       1.0  0.666667       0.8
+ Italy                       native_country        15       1.0       0.6      0.75
+ Jamaica                     native_country        18       1.0       0.5  0.666667
+ Laos                        native_country         6       1.0       0.0       0.0
+ Nicaragua                   native_country         5       1.0       1.0       1.0
+ Peru                        native_country         8       0.0       0.0       1.0
+ England                     native_country        19  0.666667       0.8  0.727273
+ Trinadad&Tobago             native_country         3       1.0       1.0       1.0
+ Ireland                     native_country         4       1.0       0.0       0.0
+ Cambodia                    native_country         4       1.0       0.5  0.666667
+ Portugal                    native_country        10       1.0       1.0       1.0
+ Guatemala                   native_country         7       1.0       1.0       1.0
+ Greece                      native_country         8      0.75       1.0  0.857143
+ Thailand                    native_country         2       1.0       1.0       1.0
+ Outlying-US(Guam-USVI-etc)  native_country         3       1.0       1.0       1.0
+ Hong                        native_country         4       1.0       1.0       1.0
+ Honduras                    native_country         1       1.0       1.0       1.0
+ Hungary                     native_country         1       1.0       1.0       1.0
+***

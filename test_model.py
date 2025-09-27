@@ -18,7 +18,7 @@ from ml.model import inference
 
 MODEL_PATH = Path(__name__).resolve().parent / "model"
 DATA_PATH = Path(__name__).resolve().parent / "data"
-DATA_FILE = DATA_PATH / "census.csv"
+DATA_FILE = DATA_PATH / "census_clean.csv"
 ENCODER_FILE = MODEL_PATH / "encoder.pkl"
 LB_FILE = MODEL_PATH / "label_binarizer.pkl"
 MODEL_FILE = MODEL_PATH / "trained_model.pkl"

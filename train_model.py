@@ -16,7 +16,7 @@ from ml.model import train_model, compute_model_metrics, inference, compute_slic
 
 MODEL_PATH = Path(__name__).resolve().parent / "model"
 DATA_PATH = Path(__name__).resolve().parent / "data"
-DATA_FILE = DATA_PATH / "census.csv"
+DATA_FILE = DATA_PATH / "census_clean.csv"
 
 logging.basicConfig(
     level=logging.DEBUG,
