@@ -11,7 +11,7 @@ from pathlib import Path
 from sklearn.model_selection import train_test_split
 
 from ml.data import process_data
-from ml.model import train_classifier, compute_model_metrics, inference, compute_slices
+from ml.model import train_model, compute_model_metrics, inference, compute_slices
 
 
 MODEL_PATH = Path(__name__).resolve().parent / "model"
@@ -28,7 +28,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-def train_model(datafile=DATA_FILE) -> None:
+def train_modell(datafile=DATA_FILE) -> None:
     logger.info(f"Reading data: {datafile}")
     data = pd.read_csv(datafile)
 
@@ -51,7 +51,7 @@ def train_model(datafile=DATA_FILE) -> None:
     )
 
     logger.info("Training model")
-    model = train_classifier(X_train, y_train)
+    model = train_model(X_train, y_train)
 
     logger.info(f"Training model complete! Saving it to {MODEL_PATH}")
     pickle.dump(model, open(MODEL_PATH / "trained_model.pkl", "wb"))
@@ -71,4 +71,4 @@ def train_model(datafile=DATA_FILE) -> None:
         logging.info(f"***\nPerformance on {feature} slice -> \n{performance}\n***")
 
 if __name__ == "__main__":
-    train_model()
+    train_modell()
