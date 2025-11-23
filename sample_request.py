@@ -20,7 +20,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # local_url = "http://127.0.0.1:7000/predictions/"
-cloud_url = "https://deploying-a-ml-model.onrender.com"
+cloud_url = "https://deploying-a-ml-model.onrender.com/predictions/"
 
 sample = {
     "age": 35,
@@ -43,4 +43,5 @@ response = requests.post(cloud_url, data=json.dumps(sample))
 
 logger.info(f"sending sample request to {cloud_url}")
 logger.info(f"Status code received -> {response.status_code}")
+
 logger.info(f"Sample prediction -> {response.json()}")
