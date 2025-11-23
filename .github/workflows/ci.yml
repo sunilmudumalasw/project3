@@ -26,8 +26,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
     - name: Lint with flake8
-      run: flake8 . || true
+      run: flake8 . || true   # avoid failing CI due to style issues
 
     - name: Run tests with pytest
-      run: |
-        pytest
+      run: pytest
